@@ -1,0 +1,45 @@
+# Example server block. Adapt paths and domain before installing.
+# HTTP suffices for the current image-based demo. Configure HTTPS before
+# implementing real camera access or sending any user photos / tokens.
+server {
+    listen 80;
+    server_name demo.example.com;
+    root /var/www/movetopia/current/dist;
+    index index.html;
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
+    add_header X-Content-Type-Options nosniff always;
+
+    location = /index.html {
+        add_header Cache-Control "no-cache";
+    }
+    location /assets/ {
+        try_files $uri =404;
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+    location /images/ {
+        try_files $uri =404;
+        add_header Cache-Control "no-cache";
+    }
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # Current demo has no API calls. Deliberately do not pretend an API exists.
+    location /api/ {
+        return 501;
+    }
+
+    # After a backend is actually available, REPLACE the /api/ block above:
+    # location /api/ {
+    #     client_max_body_size 12m;  # Example, align with confirmed upload limit.
+    #     proxy_pass http://127.0.0.1:8000;  # Preserves /api/... prefix.
+    #     proxy_set_header Host $host;
+    #     proxy_set_header X-Real-IP $remote_addr;
+    #     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    #     proxy_set_header X-Forwarded-Proto $scheme;
+    #     proxy_connect_timeout 10s;
+    #     proxy_read_timeout 60s;
+    # }
+}
