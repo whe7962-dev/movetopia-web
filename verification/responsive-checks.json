@@ -1,0 +1,146 @@
+[
+  {
+    "width": 320,
+    "route": "home",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 320,
+    "route": "permissions",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 320,
+    "route": "camera",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 320,
+    "route": "select",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 320,
+    "route": "result",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 320,
+    "route": "gallery",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 390,
+    "route": "home",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 390,
+    "route": "permissions",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 390,
+    "route": "camera",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 390,
+    "route": "select",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 390,
+    "route": "result",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 390,
+    "route": "gallery",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 768,
+    "route": "home",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 768,
+    "route": "permissions",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 768,
+    "route": "camera",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 768,
+    "route": "select",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 768,
+    "route": "result",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 768,
+    "route": "gallery",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 1440,
+    "route": "home",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 1440,
+    "route": "permissions",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 1440,
+    "route": "camera",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 1440,
+    "route": "select",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 1440,
+    "route": "result",
+    "overflow": false,
+    "broken": false
+  },
+  {
+    "width": 1440,
+    "route": "gallery",
+    "overflow": false,
+    "broken": false
+  }
+]
